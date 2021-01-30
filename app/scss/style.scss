@@ -238,16 +238,16 @@
     .slick-dots {
         text-align: center;
         margin-top: 50px;
-        li{
+        li {
             display: inline-block;
             margin-left: 3px;
             margin-right: 3px;
-            &.slick-active{
-                button{
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
-            button{
+            button {
                 border-radius: 50%;
                 background-color: rgb(232, 232, 232);
                 border: none;
@@ -256,11 +256,37 @@
                 height: 16px;
                 cursor: pointer;
                 outline: none;
-
             }
         }
     }
 }
 
 // end product-slider
- 
+// start tutorial
+.tutorial {
+    padding: 70px 0px 120px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        &-images {
+            min-height: 270px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &-title {
+            font-size: 24px;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 30px 10px;
+            font-weight: 700;
+            color: $bg;
+        }
+    }
+}
+
+// end tutorial
