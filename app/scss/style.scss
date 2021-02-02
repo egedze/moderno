@@ -284,12 +284,10 @@
             background-color: $green;
             color: #fff;
             fill: #ffffff;
-
         }
         .advantages__item-title {
             color: $green;
         }
-
     }
     &-images {
         width: 114px;
@@ -329,6 +327,43 @@
     }
 }
 // end advantages
+// star author
+.author {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        max-width: 650px;
+        min-height: 215px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+    }
+    &__title {
+        margin-left: 60px;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 260px;
+        span {
+            @include f700;
+        }
+    }
+    &-link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        background-color: #fff;
+    }
+}
+// end author
 // start tutorial
 .tutorial {
     padding: 70px 0px 120px;
